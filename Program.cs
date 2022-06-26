@@ -101,6 +101,13 @@ namespace IoAndReflect
 
             var Dooog = classs2 as Dog;
             //Dooog.Attack();
+            Console.WriteLine("-------------------------------动态类型-------------------------------");
+            dynamic text1 = "hello world";
+            text1 = 1;
+            Console.WriteLine(text1);
+            object dogObject = new Dog();
+            dynamic NewDogObject = new Dog();
+            NewDogObject.run();
         }
     }
 }
